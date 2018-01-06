@@ -7,6 +7,40 @@
 </ion-header>
 
 <ion-content>
+
+<div padding>
+  <ion-segment [(ngModel)]="pet">
+    <ion-segment-button value="kittens">
+      LOCAL FOOD
+    </ion-segment-button>
+    <ion-segment-button value="puppies">
+      CONTINENTAL
+    </ion-segment-button>
+  </ion-segment>
+</div>
+
+<div [ngSwitch]="pet">
+  <ion-list *ngSwitchCase="'puppies'">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="img/thumbnail-puppy-1.jpg">
+      </ion-thumbnail>
+      <h2>Pizza</h2>
+    </ion-item>
+    ...
+  </ion-list>
+
+  <ion-list *ngSwitchCase="'kittens'">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="img/thumbnail-kitten-1.jpg">
+      </ion-thumbnail>
+      <h2>Banku and Tilapia</h2>
+    </ion-item>
+    ...
+  </ion-list>
+</div>
+
   <h2 class="h2">FOR MORE INFORMATION, CALL THE FOLLOWING</h2>
   <ion-card class="call">
   <button ion-button block>
