@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      ORDER FOOD
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -16,7 +16,17 @@
     <ion-segment-button value="puppies">
       CONTINENTAL
     </ion-segment-button>
+
+     <ion-segment-button value="drinks">
+      DRINKS
+    </ion-segment-button>
+
+     <ion-segment-button value="break">
+      BREAKFAST
+    </ion-segment-button>
   </ion-segment>
+
+   
 </div>
 
 <div [ngSwitch]="pet">
@@ -25,8 +35,16 @@
       <ion-thumbnail item-start>
         <img src="img/thumbnail-puppy-1.jpg">
       </ion-thumbnail>
-      <h2>Pizza</h2>
+
+            <h2>Pizza</h2>
     </ion-item>
+
+    <ion-item>
+  <ion-label><h2>PIZAA     Gh  50</h2></ion-label>
+  <ion-checkbox color="dark" checked="true"></ion-checkbox>
+</ion-item>
+
+
     ...
   </ion-list>
 
@@ -37,6 +55,44 @@
       </ion-thumbnail>
       <h2>Banku and Tilapia</h2>
     </ion-item>
+
+    <ion-item>
+  <ion-label>Daenerys Targaryen</ion-label>
+  <ion-checkbox color="dark" checked="true"></ion-checkbox>
+</ion-item>
+
+...
+     </ion-list>
+
+  <ion-list *ngSwitchCase="'drinks'">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="img/thumbnail-kitten-1.jpg">
+      </ion-thumbnail>
+      <h2>Banku and Tilapia</h2>
+    </ion-item>
+
+    <ion-item>
+  <ion-label>Daenerys Targaryen</ion-label>
+  <ion-checkbox color="dark" checked="true"></ion-checkbox>
+</ion-item>
+
+...
+    </ion-list>
+
+  <ion-list *ngSwitchCase="'break'">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="img/thumbnail-kitten-1.jpg">
+      </ion-thumbnail>
+      <h2>Banku and Tilapia</h2>
+    </ion-item>
+
+    <ion-item>
+  <ion-label>Daenerys Targaryen</ion-label>
+  <ion-checkbox color="dark" checked="true"></ion-checkbox>
+</ion-item>
+
     ...
   </ion-list>
 </div>
