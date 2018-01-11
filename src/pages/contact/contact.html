@@ -18,7 +18,7 @@
 
 
 
- <marquee behavior = "alternate"> Please Place Order</marquee>
+ <marquee behavior = "alternate"> Please Place your Order</marquee>
 
   <ion-segment [(ngModel)]="pet">
     <ion-segment-button value="kittens">
@@ -52,8 +52,9 @@
 
     <ion-item>
   <ion-label><h2>PIZAA     Gh  50</h2></ion-label>
-  <ion-checkbox color="dark" checked="true"></ion-checkbox>
+  <ion-checkbox color="blue" checked="true"></ion-checkbox>
 </ion-item>
+
 
 
     ...
@@ -69,7 +70,39 @@
 
     <ion-item>
   <ion-label>Banku and Tilapia Gh 30</ion-label>
-  <ion-checkbox color="dark" checked="true"></ion-checkbox>
+  <ion-checkbox color="blue" checked="true"></ion-checkbox>
+</ion-item>
+
+...
+</ion-list>
+
+<ion-list *ngSwitchCase="'kittens'">
+  <ion-item>
+    <ion-thumbnail item-start>
+      <img src="img/thumbnail-kitten-1.jpg">
+    </ion-thumbnail>
+    <h2>Rice Ball </h2>
+  </ion-item>
+
+  <ion-item>
+<ion-label>Rice Ball Gh 10</ion-label>
+<ion-checkbox color="blue" checked="true"></ion-checkbox>
+</ion-item>
+
+...
+</ion-list>
+
+<ion-list *ngSwitchCase="'kittens'">
+  <ion-item>
+    <ion-thumbnail item-start>
+      <img src="img/thumbnail-kitten-1.jpg">
+    </ion-thumbnail>
+    <h2>KONKONTE</h2>
+  </ion-item>
+
+  <ion-item>
+<ion-label>KONKONTE  Gh 12</ion-label>
+<ion-checkbox color="blue" checked="true"></ion-checkbox>
 </ion-item>
 
 ...
@@ -85,7 +118,39 @@
 
     <ion-item>
   <ion-label>RED WINE Gh  85</ion-label>
-  <ion-checkbox color="dark" checked="true"></ion-checkbox>
+  <ion-checkbox color="blue" checked="true"></ion-checkbox>
+</ion-item>
+
+...
+     </ion-list>
+
+  <ion-list *ngSwitchCase="'drinks'">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="img/thumbnail-kitten-1.jpg">
+      </ion-thumbnail>
+      <h2>DON SIMON</h2>
+    </ion-item>
+
+    <ion-item>
+  <ion-label>DON SIMON Gh  10</ion-label>
+  <ion-checkbox color="blue" checked="true"></ion-checkbox>
+</ion-item>
+
+...
+     </ion-list>
+
+  <ion-list *ngSwitchCase="'drinks'">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="img/thumbnail-kitten-1.jpg">
+      </ion-thumbnail>
+      <h2>ADONKO BITTERS</h2>
+    </ion-item>
+
+    <ion-item>
+  <ion-label>ADONKO BITTERS Gh  15</ion-label>
+  <ion-checkbox color="blue" checked="true"></ion-checkbox>
 </ion-item>
 
 ...
@@ -101,7 +166,23 @@
 
     <ion-item>
   <ion-label>OATHS AND BREAD  Gh  15</ion-label>
-  <ion-checkbox color="dark" checked="true"></ion-checkbox>
+  <ion-checkbox color="blue" checked="true"></ion-checkbox>
+</ion-item>
+
+...
+    </ion-list>
+
+  <ion-list *ngSwitchCase="'break'">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="img/thumbnail-kitten-1.jpg">
+      </ion-thumbnail>
+      <h2>RICE WATER AND BREAD</h2>
+    </ion-item>
+
+    <ion-item>
+  <ion-label>RICE WATER AND BREAD  Gh  15</ion-label>
+  <ion-checkbox color="blue" checked="true"></ion-checkbox>
 </ion-item>
 
     ...
